@@ -1,0 +1,359 @@
+body {
+	margin: 0; 
+ 	padding: 0;
+}
+
+.container {
+	background: url(img/bg_header.gif) no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%; 
+   	background-size: 100%; 
+   	height: 662px;
+}
+
+.logo a {
+ 	font-size: 25px;
+ 	color: black;
+ 	font-family: 'News Cycle', sans-serif;
+ }
+
+.logo {
+    position: absolute;
+	margin-top: 50px;
+	margin-left: 100px;
+}
+
+.menu  {
+	position: absolute;
+	margin-left: 700px;
+	margin-top : 50px;
+}
+
+.menu ul li  {
+	display: inline;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.listMenu:hover {
+	border: 1px double black;
+	border-radius: 20px;
+	padding: 10px;
+ 	-webkit-transition: all 0.3s ;
+  	-moz-transition: all 0.3s ;
+  	-o-transition: all 0.3s ;
+  	transition: all 0.3s ;
+}
+ 
+a {
+	text-decoration: none;	
+	color: black;
+}
+
+.centr_block {
+	position: absolute;
+	margin-top: 180px;
+	margin-left: 35%;
+}
+
+.centr_block h1 {
+	font-family: 'News Cycle', sans-serif;
+}
+
+.add_to_centr_block {
+	position: absolute;
+	margin-top: 235px;
+	margin-left: 34%;
+}
+
+.add_to_centr_block p {
+	font-family: 'Roboto', sans-serif;
+	color: #b0b0af;
+}
+
+.ask_for_price {
+	margin-top: 350px;
+	position: absolute;
+	margin-left: 44%;
+}
+
+.ask_for_price button {
+	font-family: 'News Cycle', sans-serif;
+	border-radius: 50px;
+	border: 0;
+  	text-align: center;
+  	font-size: 15px;
+  	outline: none;
+  	text-decoration: none;
+  	width: 150px;
+  	height: 50px;
+  background: -webkit-linear-gradient(bottom left, #49007c, #be0085);
+  background: -o-linear-gradient(bottom left, #49007c, #be0085);
+  background: linear-gradient(to top right, #49007c, #be0085);
+  color: #ffffff
+
+}
+
+.ask_for_price button:hover {
+	-webkit-transition: all 1s ;
+  	-moz-transition: all 1s ;
+  	-o-transition: all 1s ;
+  	transition: all 1s ;
+	background: linear-gradient(-50deg,#be0085 , #49007c);
+}
+
+.scroll {
+	position: absolute;
+	margin-top: 580px;
+	margin-left: 49%;
+}
+
+.scroll_text p {
+	position: absolute;
+	margin-left: 47%;
+	margin-top: 610px;
+	font-family: 'Roboto', sans-serif;
+	color:#ffffff;
+}
+
+.container_design_code {
+	background: url(img/design_code.gif) no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%; 
+   	background-size: 100%; 
+   	height: 366px;
+}
+
+.best_design {
+	margin-top: 50px;
+	position: absolute;
+	width: 300px;
+	height: 225px;
+	margin-left: 150px;
+}
+
+.best_design h1, .best_code h1 {
+	 position: absolute;
+	 color: #ffffff;
+	 font-family: 'Roboto', sans-serif;
+	 margin-top: 10px;
+	 font-size: 40px;
+}
+
+.best_design span, .best_code span {
+	font-family: 'News Cycle', sans-serif;
+}
+
+.best_design p, .best_code p {
+	color: #ffffff;
+	position: absolute;
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	margin-top: 70px;
+}
+
+.best_design_button button, .best_code_button button, .watch_more button {
+	margin-top: 120px;
+font-family: 'News Cycle', sans-serif;
+	border-radius: 50px;
+	border: 0;
+  	text-align: center;
+  	font-size: 15px;
+  	outline: none;
+  	text-decoration: none;
+  	width: 150px;
+  	height: 50px;
+  background: -webkit-linear-gradient(bottom left, #49007c, #be0085);
+  background: -o-linear-gradient(bottom left, #49007c, #be0085);
+  background: linear-gradient(to top right, #49007c, #be0085);
+  color: #ffffff
+}
+
+.best_design_button button:hover, .best_code_button button:hover, .watch_more button:hover {
+	-webkit-transition: all 1s ;
+  	-moz-transition: all 1s ;
+  	-o-transition: all 1s ;
+  	transition: all 1s ;
+	background: linear-gradient(-50deg,#be0085 , #49007c);
+}
+
+.best_code {
+	margin-top: 50px;
+	position: absolute;
+	width: 300px;
+	height: 225px;
+	margin-left: 850px;
+}
+
+.question {
+	margin-left: 41%;
+}
+
+.question h1 {
+	font-family: 'News Cycle', sans-serif;
+}
+
+.web_design {
+	width: 400px;
+	height: 300px;
+	display: inline-block;
+	margin-left: 100px;
+}
+
+.web_design h2 {
+	font-family: 'News Cycle', sans-serif;
+}
+
+.web_design p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.web_app {
+	width: 400px;
+	height: 300px;
+	display: inline-block;
+	margin-left: 300px;
+}
+
+.web_app h2 {
+	font-family: 'News Cycle', sans-serif;
+}
+
+.web_app p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.digital_paint {
+	width: 400px;
+	height: 300px;
+	display: inline-block;
+	margin-left: 100px;
+}
+
+.digital_paint h2 {
+	font-family: 'News Cycle', sans-serif;
+}
+
+.digital_paint p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.desktop_app {
+	width: 400px;
+	height: 300px;
+	display: inline-block;
+	margin-left: 300px;
+}
+
+.desktop_app h2 {
+	font-family: 'News Cycle', sans-serif;
+}
+
+.desktop_app p {
+	font-family: 'Roboto', sans-serif;
+}
+
+.what_we_do button {
+	margin-left: 555px;
+	margin-top: 40px;
+}
+
+.fotorama {
+	margin-top: 60px;
+}
+
+.about_us {
+	background: url(img/bg_about_us.gif) no-repeat;
+	-moz-background-size: 100%;
+    -webkit-background-size: 100%;
+    -o-background-size: 100%; 
+   	background-size: 100%; 
+   	height: 633px;
+}
+
+.about_us_header {
+	position: absolute;
+	font-family: 'News Cycle', sans-serif;
+	color: #ffffff;
+	margin-left: 43%;
+}
+
+.about_us_addText {
+	position: absolute;
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	margin-left: 35%;
+	margin-top: 50px;
+}
+
+.about_us_addText span {
+	margin-left: 33%;
+}
+
+.layer1 {
+	margin-top: 250px;
+	margin-left: 150px;
+	display: inline-block;
+}
+
+.layer2 {
+	margin-top: 250px;
+	margin-left: 150px;
+	display: inline-block;
+}
+
+.layer3 {
+	margin-top: 250px;
+	margin-left: 150px;
+	display: inline-block;
+}
+
+.layer4 {
+	margin-top: 250px;
+	margin-left: 150px;
+	display: inline-block;
+}
+
+.people h2 {
+	font-family: 'News Cycle', sans-serif;
+	color: #ffffff;
+	padding: 10px;
+}
+
+.people p {
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-size: 10px;
+}
+
+.watch_more button {
+	margin-top: 20px;
+	margin-left: 44%;;
+}
+
+#map {
+	border:0;
+	width: 1349px;
+	height: 500px;
+}
+
+.footer {
+	width: 100%;
+	height: 150px;
+}
+
+.footer p {
+	font-family: 'Roboto', sans-serif;
+	margin-left: 30%;
+	padding: 20px;
+	color: rgb(196, 201, 209);
+}
+
+.footer a {
+	font-family: 'News Cycle', sans-serif;
+	font-size: 20px;
+	color: rgb(196, 201, 209);
+	margin-left: 45%;
+}
