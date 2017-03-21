@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_01</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div ng-app="">
+			<label for = "imputSomething">Imput Something</label>
+    		<input type = "text" class = "form-control" id = "imputSomething" placeholder = "Imput Something" ng-model = "imputSomething">
+    		<p ng-bind = "imputSomething"></p>
+    		</div>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<style>
+			div {
+				width: 25%;
+				margin-left: 25%;
+			}
+		</style>
+	</body>
+</html>
