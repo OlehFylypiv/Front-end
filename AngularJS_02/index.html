@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_02</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>	
+	</head>
+	<body>
+		<div ng-app = "" ng-init = " newColor ='red' ">
+				<!-- Expressions -->
+			<p>
+				Simple Expression 5 + 7 = {{5+7}}
+			</p>
+			<p ng-init = "var1 = 2; var2 = 5">
+				Numbers multiplication 2 * 5 = {{var1 * var2}}
+			</p>
+			<div>
+				<!-- If you write a text, Input change background color -->
+				<input style = "background-color: {{ newColor }}" ng-model = "newColor" value = " {{newColor}} ">
+			</div>
+				<!-- Strings -->
+			<div ng-init = " firstName = 'Oleh'; lastName = 'Fylypiv' ">
+				<p>
+					My name is <span ng-bind = " firstName + ' ' + lastName "></span>
+				</p>
+			</div>
+				<!-- Objects -->
+			<div  ng-init=" me = { firstName: 'Oleh', lastName: 'Fylypiv'}">
+				<p>
+					My name is {{ me.firstName }}
+				</p>
+			</div>
+			<!--
+				AngularJS expressions do not support conditionals, loops, and exceptions, 
+				while JavaScript expressions do. 
+				AngularJS expressions support filters, while JavaScript expressions do not.
+			 -->
+		</div>
+	</body>
+</html>
