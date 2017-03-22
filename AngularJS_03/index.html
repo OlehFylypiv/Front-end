@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_03</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app = "firstApp" ng-controller = "control">
+			{{ firstName + " " + lastName }}
+		</div>
+		<script src= "firstApp.js"></script>
+		<script src = "control.js"></script>
+		<!-- 
+			<script>
+				let app = angular.module("firstApp", []);
+				app.controller("control", function ($scope) {
+		    			$scope.firstName = "Oleh";
+		    			$scope.lastName = "Fylypiv";
+				});
+			</script 
+		-->
+	</body>
+</html>
