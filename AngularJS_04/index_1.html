@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_04</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-app = "" ng-init = " firstName = 'Oleh' ">
+			<!-- ng-model binds the value of HTML controls (input, select, textarea) to application data -->
+			<label for = "enterName">Enter your name</label>
+			<input type = "text" class = "form-control" id = "enterName" ng-model = "firstName">
+			<p>
+				My name: {{ firstName }}
+			</p>
+			<label for = "enterLastName">Enter your last name</label>
+			<input type = "text" class = "form-control" id = "enterLastName" ng-model = "lastName">
+			<p>
+				I am {{ firstName + " " + lastName }}
+			</p>
+		</div>
+	</body>
+</html>
