@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_05</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	</head>
+	<body>
+		<form ng-app = "" name = "myForm" ng-init = " myEmail = 'oleh.fylypiv@gmail.com' ">
+			<label for = "email1">Email address</label>
+			<input type = "email" class = "form-control" id = "email1" name = "myAddress" ng-model = "myEmail" required>
+			<p>Edit the e-mail address, and try to change the status.</p>
+			<h1>Status</h1>
+			<p>The ng-model directive can provide status for application data (invalid, dirty, touched, error)</p>
+			<p>Valid: {{ myForm.myAddress.$valid }}</p>
+			<p>Dirty: {{ myForm.myAddress.$dirty }}</p>
+			<p>Touched: {{ myForm.myAddress.$touched }}</p>
+		</form>
+	</body>
+</html>
