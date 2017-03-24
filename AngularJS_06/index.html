@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_06</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+	<body>
+		<div ng-app = "myApp">
+			<div ng-controller = "controller">
+				First Name : <input type = "text" ng-model = "firstName"><br>
+				Last Name : <input type ="text" ng-model = "lastName"><br>
+				<hr>
+				Full Name : {{ fullName() }}
+				<hr>
+				<ul>
+  					<li ng-repeat = "whoAndFrom in namesAndCountry">
+    					{{ whoAndFrom.name + ' from ' + whoAndFrom.country }}
+ 					</li>
+				</ul>
+			</div>
+			<div ng-controller = "sayHi">
+				<h1>{{ say }}</h1>
+			</div>
+			<div>
+				<p>
+					The rootScope is available in the entire application : {{ myName }}
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
