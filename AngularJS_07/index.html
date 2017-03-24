@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_07</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+	<body>
+		<div ng-app = "myApp" ng-controller = "myCtrl">
+			<p>
+				The <i>uppercase</i> filter format strings to upper case : {{ firstName | uppercase }}
+			</p>
+			<p>
+				The <i>lowercase</i> filter format strings to lower case : {{ lastName | lowercase }}
+			</p>
+			<hr>
+			<p>
+				The <i>orderBy</i> filter sorts an array :
+				<ul>
+  					<li ng-repeat = " x in people | orderBy : 'country' ">
+    					{{ x.name + ', ' + x.country }}
+  					</li>
+				</ul>
+				<hr>
+				<ul>
+  					<li ng-repeat = " x in people | orderBy : 'name' ">
+    					{{ x.name + ', ' + x.country }}
+  					</li>
+				</ul>  
+			</p>
+			<hr>
+			<p>
+				The <i>currency</i> filter formats a number as currency :
+				<h4>Price: {{ price | currency }}</h4>
+			</p>
+			<hr>
+			<p>
+				The <i>filter</i> selects a subset of an array. <br>
+				This example displays only the names containing the letter "i" :
+				<ul>
+  					<li ng-repeat = "x in names | filter : 'i' ">
+    					{{ x }}
+  					</li>
+				</ul>
+				This example displays only the names containing the letter "a" : 
+				<ul>
+  					<li ng-repeat = "y in names | filter : 'a' ">
+    					{{ y }}
+  					</li>
+				</ul>
+			</p>
+			<hr>
+			<p>
+				Type a letter in the input field, and the list will shrink/grow depending on the match : <br>
+				<input type = "text" class="form-control" ng-model = "filterNames" placeholder = "Enter name">
+				<ul>
+  					<li ng-repeat = "z in names | filter : filterNames">
+    					{{ z }}
+  					</li>
+				</ul>
+			</p>
+			<hr>
+			<p>
+				<button type = "button" class = "btn btn-default" ng-click = "orderByClick ('name') ">Sort Name</button>
+				<button type = "button" class = "btn btn-default" ng-click = "orderByClick ('country') ">Sort Country</button>
+				<table class = "table table-bordered">
+					<tr>
+						<th>Name</th>
+						<th>Country</th>
+					</tr>
+					<tr ng-repeat = "k in people | orderBy : myOrderBy">
+						<td> {{ k.name }} </td>
+						<td> {{ k.country }} </td>
+					</tr>
+				</table>
+			</p>
+			<hr>
+			<p>
+				You can make your own filters by registering a new filter factory function with your module : <br>
+				<ul>
+					<li ng-repeat = "j in names">
+    					{{ j | myFormat }}
+					</li>
+				</ul>
+			</p>
+		</div>	
+	</body>
+</html>	
