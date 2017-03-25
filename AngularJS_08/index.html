@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_08</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+	<body>
+		<div ng-app = "myApp" ng-controller = "myCtrl">
+			<p>
+				This example uses the built-in <i>$location</i> service to get the absolute url of the page : <br>
+				<h4>{{ currentUrl }}</h4>
+			</p>
+			<hr>
+			<p>
+				The <i>$timeout</i> service runs a function after a specified number of milliseconds : <br>
+				<h4>{{ myGreeting }}</h4>
+			</p>
+			<hr>
+			<p>
+				The Time is :
+				<h4>{{ theTime }}</h4>
+			</p>
+			<hr>
+			<p>
+				This is my own Servise : 10 * 10 = <strong>{{ pow }}</strong>
+			</p>
+			<hr>
+			<p>
+				Use own service inside a filter : <br>
+				<ul>
+  					<li ng-repeat =" x in numbers ">{{ x | myFilterPow }}</li>
+				</ul>
+			</p>
+		</div>
+	</body>
+</html>	
