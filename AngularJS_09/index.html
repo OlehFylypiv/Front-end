@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html ng-app = "countryApp">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_09</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+	<body ng-controller = "CountryCtrl">
+		<h2>JSON in AngularJS</h2 >
+		<table class = "table table-striped">
+			<tr>
+				<th>Cod</th>
+				<th>Country</th>
+				<th>People</th>
+			</tr>
+			<tr ng-repeat = " country in countries | orderBy: 'code' ">
+				<td>{{ country.code }}</td>
+				<td>{{ country.name }}</td>
+				<td>{{ country.population }}</td>
+			</tr>
+		</table>
+	</body>
+</html>
