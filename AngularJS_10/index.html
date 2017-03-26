@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_10</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+	<body>
+		<div ng-app = "myApp" ng-controller = "myCtrl">
+			<p>
+				If you want to create a dropdown list, based on an object or an array in AngularJS, <br> 
+				you should use the ng-options directive	: <br>	
+				<select ng-model = "selectedName" ng-options = "x for x in names" class = "form-control"></select>
+			</p>
+			<hr>
+			<p>
+				This example shows how to fill a dropdown list using the ng-repeat directive : <br>
+				<select class = "form-control">
+					<option ng-repeat = "y in names">
+						{{ y }}
+					</option>
+				</select>
+			</p>
+			<hr>
+			<p>
+				The <i>ng-repeat</i> directive has its limitations, the selected value must be a string : <br>
+				<select ng-model = "selectedCar" class = "form-control">
+					<option ng-repeat = "k in cars" value = "{{ k.model }}">
+						{{ k.model }}
+					</option>
+				</select>
+			</p>
+			<hr>
+			<p>
+				When using the ng-options directive, the selected value can be an object : <br>
+				<select ng-model = "selectedCar2" ng-options = "j.model for j in cars" class = "form-control"></select>
+				<h4>You selected: {{ selectedCar2.model }}</h4>
+				<p>Its color is: {{ selectedCar2.color }}</p>
+			</p>
+			<hr>
+			<p>
+				Using an object as the data source, z represents the key, and i represents the value : <br>
+				<select ng-model = "selectedCarObject" ng-options = "z for (z, i) in cars2" class = "form-control"></select>
+				<h4>You selected: {{ selectedCarObject }}</h4>
+			</p>
+			<hr>
+			<p>
+				The options in the dropdown list does not have to be the key in a key-value pair, <br>
+				it can also be the value, or a property of the value object : <br>
+				<select ng-model = "selectedCarObject2" ng-options = "n.brand for (f, n) in cars3" class = "form-control"></select>
+				<h4>You selected: {{ selectedCarObject2.brand }}</h4>
+				<h5>Model: {{ selectedCarObject2.model }}</h5>
+				<h6>Color: {{ selectedCarObject2.color }}</h6>
+			</p>
+		</div>
+		<style>
+			.form-control {
+				width: 25%;
+			}
+		</style>
+	</body>
+</html>
