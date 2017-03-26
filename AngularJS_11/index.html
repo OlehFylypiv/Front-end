@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<title>AngularJS_11</title>
+	</head>
+	<body>
+		<div ng-app = "">
+			<div ng-init = "mySwitch = true">
+				<p>
+					The <i>ng-disabled</i> directive binds AngularJS application data to the disabled attribute of HTML elements : <br>
+					<button ng-disabled = "mySwitch" class = "btn btn-default glyphicon glyphicon-heart"></button> <br>
+					<input type = "checkbox" ng-model = "mySwitch"/> Button <br>
+					{{ mySwitch }}
+				</p>
+				<hr>
+				<p>
+					The <i>ng-show</i> directive shows or hides an HTML element : 
+					<p ng-show = "true">I am visible.</p>
+					<p ng-show = "false">I am not visible.</p>
+					You can use any expression that evaluates to true or false : 
+					<p ng-show = "12">I am visible</p>
+				</p>
+				<hr>
+				<p>
+					The <i>ng-hide</i> directive hides or shows an HTML element : 
+					<p ng-hide = "true">I am not visible.</p>
+					<p ng-hide = "false">I am visible.</p>
+				</p>
+			</div>			
+		</div>	
+	</body>
+</html>
