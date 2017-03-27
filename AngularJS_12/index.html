@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_12</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+	<body>
+		<div ng-app = "myApp" ng-controller = "myCtrl">
+			<h1>Mouse Events : </h1>
+			<hr>
+			<p>
+				<h4 ng-mousemove = "count1 = count1 + 1">Mouse here</h4>
+				<h2>{{ count1 }}</h2>
+			</p>
+			<hr>
+			<p>
+				<button ng-click = "count2 = count2 + 1" class = "btn btn-default glyphicon glyphicon-plus"></button>
+				<h2>{{ count2 }}</h2>
+			</p>
+			<hr>
+			<p>
+				You can also refer to a function : <br>
+				<button ng-click = "funcForClick()" class = "btn btn-default glyphicon glyphicon-minus"></button>
+				<h2>{{ count3 }}</h2>
+			</p>
+			<hr>
+			<p>
+				If you want to show a section of HTML code when a button is clicked, <br> 
+				and hide when the button is clicked again, like a dropdown menu, <br> 
+				make the button behave like a toggle switch : <br>
+				<button ng-click = "showMenu()" class = "btn btn-default glyphicon glyphicon-circle-arrow-down"></button>
+				<div ng-show = "showMe">
+    				<ul>
+    					<li>Pizza</li>
+    					<li>Water</li>
+    					<li>CocaCola</li>
+    					<li>Lays</li>
+    				</ul>
+				</div>
+			</p>
+			<hr>
+			<p>
+				Mouse over the heading to display the value of clientX and clientY from the event object : <br>
+				<img ng-mousemove = "myXY($event)" src = "map.jpg" class = "img-responsive img-thumbnail" alt = "Map">
+				<h1>Coordinates: {{ x + ', ' + y }}</h1>
+			</p>	
+		</div>
+	</body>
+</html>
