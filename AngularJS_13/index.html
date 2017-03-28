@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_13</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+	<body>
+		<div ng-app = "myApp" ng-controller = "myCtrl">
+			<form>
+  				Pick a topic:
+  				<input type = "radio" ng-model = "theVal" value = "dogs">Dogs
+  				<input type = "radio" ng-model = "theVal" value = "tuts">Tutorials
+  				<input type = "radio" ng-model = "theVal" value = "cars">Cars
+			</form>
+			<hr>
+			<form>
+  				Select a topic:
+  				<select ng-model = "menu">
+    				<option value = "">-----
+    				<option value = "cola">CocaCola
+    				<option value = "iceCream">Ice Cream
+    				<option value = "water">Water
+  				</select>
+			</form>
+			<div ng-switch = "theVal">
+ 				 <div ng-switch-when = "dogs">
+     				<h1>Dogs</h1>
+     				<p>Welcome to a world of dogs.</p>
+  				</div>
+  				<div ng-switch-when = "tuts">
+     				<h1>Tutorials</h1>
+     				<p>Learn from examples.</p>
+  				</div>
+  				<div ng-switch-when = "cars">
+     				<h1>Cars</h1>
+     				<p>Read about cars.</p>
+  				</div>
+			</div>
+			<hr>
+			<div ng-switch = "menu">
+ 				 <div ng-switch-when = "cola">
+     				<h1>CocaCola</h1>
+     				<p>Try it!</p>
+  				</div>
+  				<div ng-switch-when = "iceCream">
+     				<h1>Ice Cream</h1>
+     				<p>Tasty</p>
+  				</div>
+  				<div ng-switch-when = "cars">
+     				<h1>Water</h1>
+     				<p>Cold water</p>
+  				</div>
+			</div>
+			<form novalidate role="form">
+    			<label for = "firstName">First Name</label>
+    			<input type = "text" ng-model = "user.firstName" class = "form-control" id = "firstName"> <br>
+    			<label for = "lastName">Last Name</label>
+    			<input type = "text" ng-model = "user.lastName" class = "form-control" id = "exampleInput"> 
+    			<button ng-click = "reset()" class = "btn btn-default glyphicon glyphicon-refresh"></button>
+  			</form>
+  			<hr>
+  			<p>Form = {{ user }}</p>
+  			<p>Master = {{ master }}</p>
+		</div>
+		<style>
+			div {
+				width : 500px;
+			}
+		</style>
+	</body>
+</html>
