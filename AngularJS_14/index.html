@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_14</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+	<body>
+        <div ng-app = "myApp">
+            <form name = "testForm">
+                <input name = "testInput" ng-model = "testInput" class = "form-control" placeholder = "Write smt" required>
+            </form>
+            <p>The input's valid state is :</p>
+            <h4>{{ testForm.testInput.$valid }}</h4>
+            <hr>
+            <form name = "emailForm">
+                <input type = "email" name = "emailInput" ng-model = "emailInput" class = "form-control" placeholder = "Write email">
+            </form>
+            <p>The input's valid state is:</p>
+            <h4>{{ emailForm.emailInput.$valid }}</h4>
+            <p>
+                Note that the state of the input field is "true" before you start writing in it, <br> 
+                even if it does not contain an e-mail address
+            </p>
+            <hr>
+            <form name = "nameForm">
+                <label for = "name">Name : </label>
+                <input name = "myName" ng-model = "myName" class = "form-control" id = "name" required>
+                <div ng-show = "nameForm.myName.$touched && nameForm.myName.$invalid">
+                    <h4>The name is required<h4>
+                </div>
+                <label for = "address">Address : </label>
+                <input name = "myAddress" ng-model= "myAddress" class = "form-control" id = "address" required>
+            </form>
+            <p>
+                We use the ng-show directive to only show the error message <br> 
+                if the field has been touched AND is empty
+            </p>
+            <hr>
+            <form name = "colorForm" class = "colorClass">
+                <p>Try writing in the input field : </p>
+                <input name = color ng-model = "color" class = "form-control colorClass" required>
+                <p>
+                    The form gets a "ng-dirty" class when the form has been modified, <br>
+                    and will therefore turn pink
+                </p>
+            </form>
+            <hr>
+            <form name = "customForm">
+                <input name = "customInput" ng-model = "customInput" class = "form-control" required my-directive>
+            </form>
+            <p>The input's valid state is : </p>
+            <h4>{{ customForm.customInput.$valid }}</h4>
+            <p>The input field must contain the character "A" to be consider valid</p>
+                <!-- For better understanding code I use CSS here, in index.html -->
+            <style>
+                form {
+                    width : 500px; 
+                }
+                input.ng-invalid {
+                    background-color : pink;
+                }
+                input.ng-valid {
+                    background-color : lightgreen;
+                }
+                .colorClass.ng-pristine {
+                    background-color : #abc;
+                }
+                .colorClass.ng-dirty {
+                    background-color : #cdb;
+                }
+            </style>
+        </div>
+	</body>
+</html>
