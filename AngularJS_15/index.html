@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_15</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src = "controller.js"></script>
+	</head>
+	<body>
+        <div ng-app = "myApp" ng-controller = "myCtrl">
+           <h1>AngularJS Global API</h1>
+           <ul>
+                <li>angular.lowercase()</li>
+                <li>angular.uppercase()</li>
+                <li>angular.isString()</li>
+                <li>angular.isNumber()</li>
+            </ul> 
+           <hr>
+            <h2>angular.lowercase()</h2>
+            <p>{{ nameUp }}</p>
+            <p>{{ nameLower }}</p>
+            <hr>
+            <h2>angular.uppercase()</h2>
+            <p>{{ nameLowerToUp }}</p>
+            <hr>
+            <h2>angular.isString()</h2>
+            <p>{{ isNameUpStr }}</p>
+            <hr>
+            <h2>angular.isNumber()</h2>
+            <p>{{ isNameUpNumber }}</p>
+        </div>
+	</body>
+</html>
