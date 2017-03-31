@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_16</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<link rel = "stylesheet" href = "style.css">
+		<script src = "controller.js"></script>
+	</head>
+	<body>
+		<h2>Check form using AngularJS</h2>
+        <form ng-app = "checkForm" ng-controller = "validationCtrl" name = "sampleForm" novalidate class = "form-horizontal">
+            <div class = "form-group">
+                <label class = "col-sm-2 control-label">User name :</label>
+                <div class = "col-sm-5">
+                    <input type = "text" class = "form-control" name = "username" ng-model = "username" required>
+                </div>
+                <div class = "col-sm-5 color" ng-show = "sampleForm.username.$dirty && sampleForm.username.$invalid">
+                    <span ng-show = "sampleForm.username.$dirty && sampleForm.username.$invalid"></span>
+                    <span ng-show = "sampleForm.username.$error.required">The form must contain a user name</span>
+                </div>
+            </div>
+            <div class = "form-group">
+                <label class = "col-sm-2 control-label">Email :</label>
+                <div class = "col-sm-5">
+                    <input type = "email" class = "form-control" name = "email" ng-model = "email" required>
+                </div>
+                <div class = "col-sm-5 color" ng-show = "sampleForm.email.$dirty && sampleForm.email.$invalid">
+                    <span ng-show = "sampleForm.email.$error.required">The form must contain an Email</span>
+                    <span ng-show = "sampleForm.email.$error.email">Wrong address</span>
+                </div>
+            </div>
+            <div class = "form-group">
+                <div class = "col-sm-offset-2 col-sm-10">
+                    <button class = "btn btn-link" ng-click = "reset()">Cancel</button>
+                    <input type = "submit" class = "btn btn-primary" 
+                        ng-click = "checkData()" 
+                        ng-disabled = "sampleForm.user.$dirty && sampleForm.user.$invalid || sampleForm.email.$dirty&&sampleForm.email.$invalid || sampleForm.$invalid">
+                </div>
+            </div>
+        </form>
+	</body>
+</html>
