@@ -1,0 +1,17 @@
+@keyframes myChange {
+    from {
+        height: 200px;
+    } 
+    to {
+        height: 0;
+    }
+}
+
+div {
+    height: 200px;
+    background-color: lightblue;
+}
+
+div.ng-hide {
+    animation: 0.8s myChange;
+}

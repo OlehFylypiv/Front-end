@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_17</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "style.css">
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
+	</head>
+    <body ng-app = "myApp">
+        <h4>Hide the DIV : <input type = "checkbox" ng-model = "myCheck"></h4>
+        <div ng-hide = "myCheck"></div>
+        <script>
+            let app = angular.module("myApp", ["ngAnimate"]);
+        </script>
+    </body>
+</html>
