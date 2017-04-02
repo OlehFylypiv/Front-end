@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>AngularJS_18</title>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+		<script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+		<script src = "script.js"></script>
+	</head>
+	<body ng-app = "RoutingApp">
+		<h2>AngularJS Routing</h2>
+		<p>
+			Move to 
+			<a href = "#first">first </a> 
+			or 
+			<a href = "#second">second </a>
+			page.
+		</p>
+		<div ng-view></div>
+	</body>
+</html>
