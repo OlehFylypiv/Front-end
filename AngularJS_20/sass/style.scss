@@ -1,0 +1,51 @@
+$mainColor : rgb(166, 166, 166);
+$textColor : rgb(255, 77, 166);
+$deleteColor : #fff;
+$mainFontFamily : 'Arsenal', sans-serif;
+$inputFontFamily : 'Merriweather Sans', sans-serif;
+
+body {
+	margin-top : 30px;
+}
+
+.shopList {
+	background-color : $mainColor;
+	border-radius : 10px;
+}
+
+ol {
+	li {
+		font-family: $mainFontFamily;
+		font-size : 40px;
+		border-bottom: 2px solid white;
+		color : $textColor;
+		padding : 10px;
+	}
+}
+
+ol {
+	li {
+		span {
+			color : $deleteColor;
+			cursor: pointer;
+		}
+	}
+}
+
+input {
+	font-family : $inputFontFamily;
+}
+
+p {
+	font-family : $inputFontFamily;
+	color : $deleteColor;
+	margin-top : 10px;
+}
+
+.changeColor {
+  color : $mainColor;
+}
+
+.changeColor:hover {
+  color : $textColor; 
+}
