@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Shop List</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src = "js/controller.js"></script>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel = "stylesheet" href = "css/style.css">
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Arsenal|Merriweather+Sans">
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-md-offset-3 shopList">
+					<div ng-app = "myShoppingList" ng-controller = "myCtrl">
+						<ol>
+    						<li ng-repeat = "x in products">{{ x }}
+								<span ng-click = "removeItem($index)"> × </span>
+    						</li>
+  						</ol>
+  						<div class = "row">
+  							<div class = "col-md-10 col-sm-10 col-xs-10 col-lg-10">
+  								<input ng-model = "addMe" type = "text" class = "form-control" placeholder = "Add shopping items">
+  							</div>
+  							<div class = "col-md-2 col-sm-2 col-xs-2 col-lg-2">
+  								<button ng-click = "addItem()" type = "button" class = "btn btn-default glyphicon glyphicon-plus changeColor"></button>
+  							</div>
+  						</div>
+  						<p>{{ errortext }}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
