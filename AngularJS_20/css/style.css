@@ -1,0 +1,39 @@
+body {
+  margin-top: 30px;
+}
+
+.shopList {
+  background-color: #a6a6a6;
+  border-radius: 10px;
+}
+
+ol li {
+  font-family: "Arsenal", sans-serif;
+  font-size: 40px;
+  border-bottom: 2px solid white;
+  color: #ff4da6;
+  padding: 10px;
+}
+
+ol li span {
+  color: #fff;
+  cursor: pointer;
+}
+
+input {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+p {
+  font-family: "Merriweather Sans", sans-serif;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.changeColor {
+  color: #a6a6a6;
+}
+
+.changeColor:hover {
+  color: #ff4da6;
+}
