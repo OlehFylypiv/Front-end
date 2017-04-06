@@ -1,0 +1,36 @@
+$colorMainPanel : #80ffbf;
+$colorBorder : #66ff66;
+$animationBlockColor : #ffff4d;
+
+#panel, #flip {
+    padding : 5px;
+    text-align : center;
+    background-color : $colorMainPanel;
+    border : solid 2px $colorBorder;
+    cursor : pointer;
+    border-radius : 10px;
+    margin-top : 20px;
+}
+
+#panel {
+    padding : 50px;
+    display : none;
+}
+
+#clean, #stop {
+	display : none;
+	color : $colorBorder;
+	margin-top : 10px;
+}
+
+.animation {
+	background : $animationBlockColor;
+	height : 100px;
+	width : 100px;
+	position : absolute;
+	border-radius : 10px;
+	button {
+		margin-top : 25%;
+		margin-left : 35%;
+	};
+}

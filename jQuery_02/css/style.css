@@ -1,0 +1,33 @@
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #80ffbf;
+  border: solid 2px #66ff66;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+#clean, #stop {
+  display: none;
+  color: #66ff66;
+  margin-top: 10px;
+}
+
+.animation {
+  background: #ffff4d;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.animation button {
+  margin-top: 25%;
+  margin-left: 35%;
+}
