@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>jQuery_01</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel = "stylesheet" href = "css/style.css">
+		<script src = "js/main.js"></script>
+	</head>
+	<body>
+		<p class = "testEvent">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, possimus?
+		</p>
+		<button id = "hide" class = "btn btn-default glyphicon glyphicon-chevron-down"></button>
+		<button id = "show" class = "btn btn-default glyphicon glyphicon-chevron-up"></button>
+		<hr>
+		<p>
+			With jQuery you can fade an element in and out of visibility. <br>
+			jQuery has the following fade methods : <br>
+			<ul>
+				<li>fadeIn()</li>
+				<li>fadeOut()</li>
+				<li>fadeToggle()</li>
+				<li>fadeTo()</li>
+			</ul>
+		</p>
+		<button id = "showFadeToggle" class = "btn btn-default glyphicon glyphicon-chevron-down"></button> <br>
+		<div id = "div1"></div> <br>
+		<div id = "div2"></div> <br>
+		<div id = "div3"></div>
+			<!-- Don't work in main.js -->
+		<script>
+			$(document).ready(function(){
+    			$("#showFadeToggle").click(function(){
+        			$("#div1").fadeToggle();
+        			$("#div2").fadeToggle("slow");
+        			$("#div3").fadeToggle(3000);
+    			});
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,21 @@
+$colorBlock1 : #00b3b3;
+$colorBlock2 : #e65c00;
+$colorBlock3 : #2eb82e;
+
+#div1 {
+	height : 90px;
+	width : 70px;
+	background-color : $colorBlock1;
+}
+
+#div2 {
+	height : 90px;
+	width : 40px;
+	background-color : $colorBlock2;
+}
+
+#div3 {
+	height : 70px;
+	width : 90px;
+	background-color : $colorBlock3;
+}
