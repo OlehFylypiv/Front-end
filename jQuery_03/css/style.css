@@ -1,0 +1,23 @@
+#test {
+  margin-top: 20px;
+}
+
+#addText {
+  background-color: #4d94ff;
+  border-radius: 10px;
+}
+
+#addText p {
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #cccccc;
+}
+
+.showSize {
+  height: 100px;
+  background-color: #cccccc;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  color: #4d94ff;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>jQuery_03</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel = "stylesheet" href = "css/style.css">
+		<script src = "js/main.js"></script>
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3 ">
+					<p id = "test">
+						Lorem <i>ipsum</i> <b>dolor</b> sit amet, consectetur. <br>
+					</p>
+					<button type = "button" class = "btn btn-info" id = "btn1">Show Text</button>
+					<button type = "button" class = "btn btn-info" id = "btn2">Show HTML</button>
+					<hr>
+					<label for = "showName">Name : </label>
+    				<input type = "text" class = "form-control" id = "showName" value = "Oleh Fylypiv"> <br>
+    				<button type = "button" class = "btn btn-default glyphicon glyphicon-pencil" id = "buttonForShowName"></button>
+    				<hr>
+    				<p id = "test2">
+    					This is a paragraph.
+    				</p>
+					<p id = "test3">
+						This is another paragraph.
+					</p>
+					<label for = "setName">Name : </label>
+    				<input type = "text" class = "form-control" id = "setName" value = "Mr. Black"> <br>
+					<button id = "btn3" class = "btn btn-default">Set Text</button>
+					<button id = "btn4" class = "btn btn-default">Set HTML</button>
+					<button id = "btn5" class = "btn btn-default">Set Value</button>
+					<hr>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, tenetur.
+					</p>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					</p>
+					<ol>
+						<li>Lviv</li>
+						<li>NY</li>
+						<li>London</li>
+						<li>Paris</li>
+					</ol>
+					<button id = "btn6" class = "btn btn-default">Append text</button>
+					<button id = "btn7" class = "btn btn-default">Append list items</button>
+					<button id = "btn8" class = "btn btn-default">Prepended text</button>
+					<button id = "btn9" class = "btn btn-default">Prepended item</button>
+					<hr>
+					<button class = "btn btn-default glyphicon glyphicon-plus" onclick = "appendText()"></button>
+					<button id = "btn10" class = "btn btn-default glyphicon glyphicon-trash"></button>
+					<div id = "addText">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, ipsa!
+						</p>
+						<script>
+							function appendText() {
+        						let txt1 = "<p>Text.</p>";              
+        						let txt2 = $("<p></p>").text("Text.");  
+        						let txt3 = document.createElement("p");
+        						txt3.innerHTML = "Text.";              
+        						$("#addText").append(txt1, txt2, txt3);     
+    						}
+						</script>
+					</div>
+					<hr>
+					<div class = "showSize">
+						<button id = "btn11" class = "btn btn-default glyphicon glyphicon-cog"></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

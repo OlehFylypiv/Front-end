@@ -1,0 +1,25 @@
+$deleteDivColor : #4d94ff;
+$textColor : #cccccc;
+
+#test {
+	margin-top : 20px;
+}
+
+#addText {
+	background-color : $deleteDivColor;
+	border-radius : 10px;
+	p {
+		margin-top : 10px;
+		margin-left : 10px;
+		color : $textColor;
+	}
+}
+
+.showSize {
+	height : 100px;
+	background-color : $textColor;
+	margin-bottom : 20px;
+	padding : 20px;
+	border-radius : 10px;
+	color : $deleteDivColor;
+}
