@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>jQuery_04</title>
+		<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+		<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel = "stylesheet" href = "css/style.css">
+		<script src = "js/main.js"></script>
+	</head>
+	<body>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+					<div class = "setStyle">
+						<div>
+							div (great-grandparent)
+							<ul>
+								ul (grandparent)
+								<li>
+									li (direct parent)
+									<span>span</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class = "row">
+				<div class = "col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+					<div class = "setStyle">
+						<div>
+							div (grandparent)   
+							<p>
+								p (direct parent)
+								<span>span</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class = "row">
+				<div class = "col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+					<div class = "setStyle">
+						body (great-great-grandparent)
+						<div>
+							div (great-grandparent)
+							<ul>
+								ul (grandparent)  
+								<li>
+									li (direct parent)
+									<b>Lviv</b>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class = "row">
+				<div class = "col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+					<div class = "setStyle">
+						div (current element) 
+						<q class = "first">
+							q (child)
+							<span>span (grandchild)</span>
+						</q>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class = "row">
+				<div class = "col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+					<div class = "setStyle">
+						<div>
+							div (parent)
+							<p>p</p>
+							<span>span</span>
+							<h2>h2</h2>
+							<h3>h3 ( color : red )</h3>
+							<p>p</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class = "row">
+				<div class = "col-lg-6 col-md-6 col-sm-6 col-xs-6 col-lg-offset-3 col-md-offset-3 col-sm-offset-3 col-xs-offset-3">
+					<div>
+						<p id = "setBgColor">Lviv</p>
+						<p>Berlin</p>
+						<p>London</p>
+						<p id = "setBgColor">NY</p>
+						<p>Paris</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
