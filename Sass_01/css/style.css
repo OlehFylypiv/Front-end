@@ -1,0 +1,29 @@
+h2 {
+  -webkit-box-shadow: 10px 10px 5px 0px #cac;
+  -moz-box-shadow: 10px 10px 5px 0px #cac;
+  -ms-box-shadow: 10px 10px 5px 0px #cac;
+  box-shadow: 10px 10px 5px 0px #cac;
+}
+
+h3 {
+  -webkit-box-shadow: 7px 7px 4px 0px #ddd;
+  -moz-box-shadow: 7px 7px 4px 0px #ddd;
+  -ms-box-shadow: 7px 7px 4px 0px #ddd;
+  box-shadow: 7px 7px 4px 0px #ddd;
+}
+
+/* Inheritance */
+.message, .warningMessage, .errorMessage {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.warningMessage {
+  color: #bcd;
+}
+
+.errorMessage {
+  color: #adc;
+}

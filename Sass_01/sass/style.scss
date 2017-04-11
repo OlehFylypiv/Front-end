@@ -1,0 +1,33 @@
+@mixin box-shadow($hLength, $vLength, $blur, $spread, $color) {
+	-webkit-box-shadow : $hLength $vLength $blur $spread $color;
+	-moz-box-shadow : $hLength $vLength $blur $spread $color;
+	-ms-box-shadow : $hLength $vLength $blur $spread $color;
+	box-shadow : $hLength $vLength $blur $spread $color;
+}
+
+h2 {
+	@include box-shadow(10px, 10px, 5px, 0px, #cac);
+}
+
+h3 {
+	@include box-shadow(7px, 7px, 4px, 0px, #ddd);
+}
+
+/* Inheritance */
+
+.message {
+	font-size : 20px;
+	line-height : 22px;
+	font-weight : bold;
+	color : #ccc;
+}
+
+.warningMessage {
+	@extend .message;
+	color : #bcd;
+}
+
+.errorMessage {
+	@extend .message;
+	color : #adc;
+}
