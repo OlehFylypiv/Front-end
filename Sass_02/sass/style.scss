@@ -1,0 +1,68 @@
+$var : true;
+
+.text {
+	@debug "var = #{ $var }";
+	@if $var == true {
+		color : red;
+	}
+	@else {
+		color : blue;
+	}
+}
+
+$width : 550px;
+@mixin module($width) {
+	@warn "width = #{ $width }";
+	@if $width >= 480px and $width < 768px {
+		@media(min-width : 480px) {
+			width : 55%;
+		}
+	}
+	@else if $width >= 768px {
+		@media(min-width : 768px) {
+			width : 35%;
+		} 
+	}
+	@else {
+		width : 100%;
+	}
+}
+
+.module1 {
+	@include module(590px);
+}
+
+$list : 10px, 100px, 23px, 32px, 40px;
+.module2 {
+	@for $i from 1 to 4 {
+		&:nth-child(#{ $i }) {
+			margin-left : nth($list, $i);
+		}
+	}
+}
+
+.module3 {
+	@for $i from 1 through length($list) {
+		&:nth-child(#{ $i }) {
+			margin-right : nth($list, $i);
+		}
+	}
+}
+
+$colors : red, blue, pink, seagreen;
+.module4 {
+	width : 100px;
+	@each $j in $colors {
+		&-#{ $j } {
+			background-color : $j;
+		}
+	}
+}
+
+$k : 4;
+@while $k > 0 {
+	.module5:nth-child(#{ $k }) {
+		countdown : $k;
+	} 
+	$k : $k - 1 !global; 
+}

@@ -1,0 +1,61 @@
+.text {
+  color: red;
+}
+
+@media (min-width: 480px) {
+  .module1 {
+    width: 55%;
+  }
+}
+
+.module2:nth-child(1) {
+  margin-left: 10px;
+}
+
+.module2:nth-child(2) {
+  margin-left: 100px;
+}
+
+.module2:nth-child(3) {
+  margin-left: 23px;
+}
+
+.module3:nth-child(1) {
+  margin-right: 10px;
+}
+
+.module3:nth-child(2) {
+  margin-right: 100px;
+}
+
+.module3:nth-child(3) {
+  margin-right: 23px;
+}
+
+.module3:nth-child(4) {
+  margin-right: 32px;
+}
+
+.module3:nth-child(5) {
+  margin-right: 40px;
+}
+
+.module4 {
+  width: 100px;
+}
+
+.module4-red {
+  background-color: red;
+}
+
+.module4-blue {
+  background-color: blue;
+}
+
+.module4-pink {
+  background-color: pink;
+}
+
+.module4-seagreen {
+  background-color: seagreen;
+}
