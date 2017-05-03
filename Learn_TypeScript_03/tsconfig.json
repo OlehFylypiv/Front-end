@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "out": "main.js", 
+        "sourceMap": true, 
+        "target": "es5"
+    }, 
+    "files": [
+        "main.ts"
+    ]
+}
