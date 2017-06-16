@@ -1,0 +1,68 @@
+body {
+	background-color: #dbdde0;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.flex-row {
+	display: flex;
+}
+
+.form {
+	width: 750px;
+	margin: 0 auto;
+	margin-top: 4%;
+}
+
+.all-enter-text-places>input {
+	width: 360px;
+	height: 50px;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+	margin-top: 25px;
+}
+
+.text-area>input {
+	width: 750px;
+	height: 200px;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 16px;
+	border: none;
+	margin-top: 25px;
+}
+
+.your-email, .project-budget {
+	margin-left: 30px;
+}
+
+.send-message>input {
+	height: 54px;
+	font-size: 16px;
+	text-align: center;
+	outline: none;
+	background: #fc5f45;
+	font-weight: bold;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	width: 195px;
+}
+
+.send-message {
+	margin: 0 auto;
+	width: 195px;
+	margin-top: 50px;
+}
+
+.send-message>input:hover {
+	background: #f94e31;
+	cursor: pointer;	
+}
