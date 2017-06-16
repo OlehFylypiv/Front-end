@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.first {
+	background-color: green;
+	height: 20vh;
+}
+
+.second {
+	background-color: orange;
+	height: 30vh;
+	width: 40vw;
+}
+
+.third {
+	background-color: blue;
+	height: 30vh;
+	width: 60vw;	
+}
+
+.flex-row {
+	display: flex;
+}
+
+.four {
+	height: 10vh;
+	background-color: aqua;
+}
+
+.five {
+	background-color: yellow;
+	height: 40vh;
+	width: 30vw;
+}
+
+.six {
+	height: 40vh;
+	width: 30vw;
+	background-color: grey;
+}
+
+.seven {
+	height: 40vh;
+	width: 40vw;
+	background-color: black;
+}

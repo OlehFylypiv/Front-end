@@ -1,0 +1,44 @@
+@media screen and (max-width: 1199px) {
+
+.container {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.first {
+	height: 10vh;
+}
+
+.third {
+	height: 30vh;
+	width: 40vw;
+}
+
+.display-four {
+	height: 30vh;
+	background-color: aqua;
+	width: 20vw;
+}
+
+.four {
+	height: 0;
+}
+
+.seven {
+	width: 0;
+}
+
+.five {
+	width: 50vw;
+}
+
+.six {
+	width: 50vw;
+}
+
+.seven-down {
+	height: 20vh;
+	background-color: black;
+}
+
+}
