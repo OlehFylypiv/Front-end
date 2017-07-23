@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Work With DOM</title>
+		<script src="main.js"></script>
+		
+		<style>
+            .menu ul {
+                margin: 0;
+                list-style: none;
+                padding-left: 20px;
+                display: none;
+            }
+
+            .menu .title {
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+            .menu .title::before {
+                content: '+  ';
+                font-size: 80%;
+                color: green;
+            }
+
+            .menu.open .title::before {
+                content: '-  ';
+            }
+
+            .menu.open ul {
+                display: block;
+            }
+        </style>
+	</head>
+
+	<body onload="dropMenu()">
+		
+	   <div id="sweeties" class="menu">
+            <span class="title">Click me !</span>
+            
+            <ul>
+                <li>1 </li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>    
+	</body>
+</html>
