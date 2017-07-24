@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Work With DOM</title>
+		<script src="main.js"></script>
+		
+		<style>
+             #field {
+      			width: 200px;
+      			height: 200px;
+      			border: 10px groove black;
+      			background-color: #00FF00;
+      			position: relative;
+      			overflow: hidden;
+      			cursor: pointer;
+    		}
+
+    		#ball {
+      			position: absolute;
+      			left: 0;
+      			top: 0;
+      			width: 40px;
+      			height: 40px;
+      			-webkit-transition: all 1s;
+      			-moz-transition: all 1s;
+      			-o-transition: all 1s;
+      			-ms-transition: all 1s;
+      			transition: all 1s;
+        </style>
+	</head>
+
+	<body onload="clickBall()">
+		
+	   <div id="field">
+    		<img src="https://js.cx/clipart/ball.svg" id="ball">
+  		</div>
+	</body>
+</html>
