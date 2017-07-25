@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Work With DOM</title>
+		<script src="main.js"></script>
+		
+		<style>
+             th {
+                cursor: pointer;
+            }
+
+            th:hover {
+                background: green;
+            }
+        </style>
+	</head>
+
+	<body onload="sortTable()">
+		
+	   <table id="grid">
+            <thead>
+                <tr>
+                    <th data-type="number">Age</th>
+                    <th data-type="string">Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>55</td>
+                    <td>John</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Kris</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Oleh</td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>Adam</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>Samanta</td>
+                </tr>
+            </tbody>
+        </table>
+	</body>
+</html>
