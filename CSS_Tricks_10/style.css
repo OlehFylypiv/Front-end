@@ -1,0 +1,26 @@
+.close {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.close:after {
+    content: '';
+    height: 25px;
+    border-left: 2px solid #f9453b;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.close:before {
+    content: '';
+    height: 25px;
+    border-left: 2px solid #f9453b;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.close:hover:after, .close:hover:before {
+    border-left: 2px solid #c1342c;
+}
