@@ -1,0 +1,32 @@
+.accordion {
+    list-style: none;
+}
+
+.accordion label {
+    display: block;
+    background-color: grey;
+    padding: 10px;
+}
+
+.accordion label:hover {
+    cursor: pointer;
+    color: #999;
+}
+
+.accordion input[type='radio'] {
+    display: none;
+}
+
+.accordion input[type='radio']:checked + .content {
+    display: block;
+    height: auto;
+    max-height: 300px;
+    transition: max-height 1s ease-in-out;
+}
+
+.accordion .content {
+    padding: 10px;
+    background-color: blue;
+    max-height: 0;
+    overflow: hidden;
+}
