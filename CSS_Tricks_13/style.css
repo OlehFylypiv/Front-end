@@ -1,0 +1,95 @@
+@-webkit-keyframes loading {
+    from   { 
+      width: 0%; 
+    }
+    to{
+        width:10%;
+    }
+}
+
+body {
+    background-color:#EDEAE3;
+}
+
+#colourStrip {
+    margin:auto;
+    margin-top:15em;
+    width:80%;
+    height:30px;
+}
+
+.colorSection {
+    display:inline-block;
+    height:100%;
+    margin-left:-4px;
+    box-shadow: inset 7px 0px 30px -6px rgba(0, 0, 0, 0.18);
+}
+
+#color1 {
+    background-color:#A3A948;
+    animation: loading 2s ;
+    animation-fill-mode: forwards;
+}
+
+#color2 {
+    background-color:#EDB92E;
+    animation: loading 2s ;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+#color3 {
+    background-color:#F85931;
+    animation: loading 2s ;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#color4 {
+    background-color:#CE1836;
+    animation: loading 2s ;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#color5 {
+    background-color:#DBBAE5;
+    animation: loading 2s ;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+#color6 {
+    background-color:#009989;
+    animation: loading 2s ;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+#color7 {
+    background-color:#B7E3C0;
+    animation: loading 2s ;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#color8 {
+    background-color:#F39DD4;
+    animation: loading 2s ;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+#color9 {
+    background-color:#452B72;
+    animation: loading 2s ;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+}
+
+#color10 {
+    background-color:#BF0C43;
+    animation: loading 2s ;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+}
