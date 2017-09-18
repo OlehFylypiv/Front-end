@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Work With Forms</title>
+    </head>
+
+    <body>
+       <form>
+            <label for="myEmail">Email</label>
+            <input type="email" required="true" id="myEmail">
+
+            <label for="myPassword">Password</label> 
+            <input type="password" required="true" id="myPassword" pattern="^[0-9]{6,10}$">
+
+            <label for="myName">Name</label>
+            <input type="text" id="myName" pattern="^[a-z]{3,10}$">
+
+            <label for="mySurname">Surname</label>
+            <input type="text" id="mySurname" pattern="^[A-Z]{6,10}$">
+
+            <label for="myAge">Age</label>
+            <input type="number" id="myAge"> 
+
+            <input type="submit"> 
+            <input type="reset">
+        </form>
+    </body>
+</html>
