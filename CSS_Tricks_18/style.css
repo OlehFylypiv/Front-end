@@ -1,0 +1,40 @@
+.container {
+    margin: 50px;
+}
+
+.upload input[type="file"] {
+    display: none;
+}
+
+.upload-path {
+    display: inline-block;
+    padding: 10px;
+    min-width: 200px;
+    font-style: italic;
+}
+
+.upload {
+    display: inline-block;
+    padding: 10px;
+    background: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+}
+
+.upload:hover {
+    background: gray;
+}
+
+.upload:active {
+    background: gray;
+}
+
+.upload:invalid + span {
+    color: red;
+}
+
+.upload:valid + span {
+    color: white;
+}
