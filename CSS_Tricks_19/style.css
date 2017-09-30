@@ -1,0 +1,44 @@
+body {
+    background: salmon;
+    margin: 5%;
+}
+
+h1 {
+    color: white;
+    font: normal 2.5em/1 sans-serif;
+}
+
+span {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+span:before, span:after {
+    content: "";
+    position: absolute;
+}
+
+span:after {
+    color: white;
+    font-size: inherit;
+    content: ">";
+    padding: 0.5em;
+    pointer-events: none;
+    right: 0.3em;
+    top: 25%;
+    vertical-align: middle;
+}
+
+select {
+    color: #000000;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid white;
+    font-size: 150%;
+    padding: 0.5em;
+    padding-right: 2em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
