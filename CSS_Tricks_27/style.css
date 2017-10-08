@@ -1,0 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+body {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: hsla(277, 95%, 55%, 1);
+}
