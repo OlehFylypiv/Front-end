@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Like Button</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <div>
+        <i></i>
+        <span>Like</span>
+    </div>
+    
+    <script>
+        $(function() {
+            $('i').click(function() {
+                $('i, span').toggleClass('press', 1000);
+            });
+        });
+    </script>
+</body>
+</html>
