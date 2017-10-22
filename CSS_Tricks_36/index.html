@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav class="pagination-container">
+        <div class="pagination">
+            <a class="pagination-newer" href="#">PREV</a>
+            <span class="pagination-inner">
+                <a href="#">1</a>
+                <a class="pagination-active" href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+            </span>
+            <a class="pagination-older" href="#">NEXT</a>
+        </div>
+    </nav>
+    <script>
+        $('.pagination-inner a').on('click', function() {
+            $(this).siblings().removeClass('pagination-active');
+            $(this).addClass('pagination-active');
+        });
+    </script>
+</body>
+</html>
